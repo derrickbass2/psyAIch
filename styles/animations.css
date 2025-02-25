@@ -1,0 +1,31 @@
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: var(--navy) }
+}
+
+.typed-out {
+    overflow: hidden;
+    border-right: 2px solid var(--navy);
+    white-space: nowrap;
+    animation: 
+        typing 3s steps(40, end), 
+        blink-caret 0.75s step-end infinite;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.research-card img {
+    transition: transform 0.3s ease;
+}
+
+.research-card:hover img {
+    transform: rotate(360deg);
+}

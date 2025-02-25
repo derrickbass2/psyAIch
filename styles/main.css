@@ -1,0 +1,79 @@
+:root {
+    --navy: #1A2B3C;
+    --teal: #20B2AA;
+    --gray: #4A5B6C;
+    --white: #FFFFFF;
+    --text-dark: #333333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--white);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: var(--navy);
+    color: var(--white);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.ai-highlight {
+    font-family: 'Roboto Slab', serif;
+    color: var(--teal);
+}
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-color: var(--white);
+}
+
+.hero-image {
+    max-width: 250px;
+    border-radius: 50%;
+    margin-right: 2rem;
+}
+
+#research-preview {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    background-color: var(--gray);
+}
+
+.research-card {
+    background-color: var(--white);
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.research-card:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: var(--navy);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
+}
